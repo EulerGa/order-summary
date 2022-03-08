@@ -39,7 +39,7 @@ main {
     box-shadow: 0 10px 5px 0px  hsl(225, 100%, 92%)
     
 }
-.order-info {
+.order .order-info {
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -49,14 +49,10 @@ main {
 }
 .order .order-info h1 {
     font-size: 1.5rem;
-    /* text-align: center; */
-    /* margin: 1.5rem; */
     color:var(--dark-blue);
 }
 .order .order-info p {
     color: var(--desaturated-blue);
-    /* text-align: center; */
-    /* padding: 0.5rem; */
     font-size: 0.9rem;
     margin: 1.5rem;
     line-height: 1.4rem;
@@ -67,11 +63,13 @@ main {
     background-color: var(--very-pale-blue);
     margin: 2rem 1rem;
     border-radius: 0.5rem;
-
+   
+}
+.order .order-info .plan img {
+    padding-right: 1rem;
 }
 .order .order-info .plan .plan-type {
     line-height: 1.5rem;
-    padding-left: 1rem;
     align-self: center;
 }   
 .order .order-info .plan .plan-type h3{
@@ -84,11 +82,11 @@ main {
 }
 .order .order-info .plan .change {
     
+    display: block;
     align-self:center;
-    width: 100%;
-    text-align: right;
     font-size: 0.9rem;
-     
+    padding-left: 2rem;
+           
 }
 .order .order-info .plan .change:hover {
     color: var(--bright-blue);
@@ -99,7 +97,6 @@ main {
     align-self:center;
     padding: 0.8rem;
     margin:1.5rem  1rem;
-    /* text-align: center; */
     background-color: var(--bright-blue);
     color:white;
     border-radius: 0.5rem;
