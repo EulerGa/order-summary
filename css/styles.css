@@ -59,6 +59,7 @@ main {
 }
 .order .order-info .plan {
     display: flex;
+    flex-wrap: wrap;
     padding: 1rem;
     background-color: var(--very-pale-blue);
     margin: 2rem 1rem;
@@ -67,10 +68,14 @@ main {
 }
 .order .order-info .plan img {
     padding-right: 1rem;
+    
+    
 }
 .order .order-info .plan .plan-type {
     line-height: 1.5rem;
     align-self: center;
+    display: inline;
+    
 }   
 .order .order-info .plan .plan-type h3{
     font-size: 1rem;
@@ -82,7 +87,6 @@ main {
 }
 .order .order-info .plan .change {
     
-    display: block;
     align-self:center;
     font-size: 0.9rem;
     padding-left: 2rem;
