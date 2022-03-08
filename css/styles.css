@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    }
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body, main {
+    font-size: 16px;
+    height: 100%;
+    font-family: 'Red Hat Display', sans-serif;;
+}
+
+body {
+    background: url("../images/pattern-background-desktop.svg") no-repeat top var(--pale-blue);
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+   }
+
+.order {
+    width: 21rem;
+    align-self: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 5px 0px  hsl(225, 100%, 92%)
+    
+}
+.order-info {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.order .illustration-hero {
+    width: 100%;
+    height: auto;
+}
+.order .order-info h1 {
+    font-size: 1.5rem;
+    /* text-align: center; */
+    /* margin: 1.5rem; */
+    color:var(--dark-blue);
+}
+.order .order-info p {
+    color: var(--desaturated-blue);
+    /* text-align: center; */
+    /* padding: 0.5rem; */
+    font-size: 0.9rem;
+    margin: 1.5rem;
+    line-height: 1.4rem;
+}
+.order .order-info .plan {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--very-pale-blue);
+    margin: 2rem 1rem;
+    border-radius: 0.5rem;
+
+}
+.order .order-info .plan .plan-type {
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    align-self: center;
+}   
+.order .order-info .plan .plan-type h3{
+    font-size: 1rem;
+    color:var(--dark-blue);
+}
+.order .order-info .plan .plan-type span {
+    color: var(--desaturated-blue);
+
+}
+.order .order-info .plan .change {
+    
+    align-self:center;
+    width: 100%;
+    text-align: right;
+    font-size: 0.9rem;
+     
+}
+.order .order-info .plan .change:hover {
+    color: var(--bright-blue);
+    text-decoration: none;
+}
+.order .order-info .proceed {
+    display: block;
+    align-self:center;
+    padding: 0.8rem;
+    margin:1.5rem  1rem;
+    /* text-align: center; */
+    background-color: var(--bright-blue);
+    color:white;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    
+  box-shadow: 0px 15px 10px 4px var(--pale-blue);
+}  
+.order .order-info .cancel {
+  
+    color:var(--desaturated-blue);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.order .order-info .proceed:hover {
+    opacity: 0.6;
+}
+.order .order-info .cancel:hover {
+    color: var(--dark-blue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media(max-width: 600px){
+    body {
+        background: url("../images/pattern-background-mobile.svg") no-repeat top  var(--pale-blue);
+        background-size: contain;
+    }
+}
