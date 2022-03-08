@@ -73,7 +73,7 @@ main {
     align-self: center;
 }   
 .order .order-info .plan .plan-type h3{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color:var(--dark-blue);
 }
 .order .order-info .plan .plan-type span {
